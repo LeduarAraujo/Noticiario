@@ -5,7 +5,7 @@
         "changeOrigin": true,
         "logLevel": "debug",
         "pathRewrite": {
-            "^/api": "/api"
+            "^/api": ""
         }
     },
     "/valorant-api/*": {
@@ -14,7 +14,7 @@
         "changeOrigin": true,
         "logLevel": "debug",
         "pathRewrite": {
-            "^/valorant-api": "/valorant-api"
+            "^/valorant-api": ""
         }
     },
     "/adrenaline-api/*": {
@@ -23,7 +23,7 @@
         "changeOrigin": true,
         "logLevel": "debug",
         "pathRewrite": {
-            "^/adrenaline-api": "/adrenaline-api"
+            "^/adrenaline-api": ""
         }
     },
     "/pelando-api/*": {
@@ -32,7 +32,7 @@
         "changeOrigin": true,
         "logLevel": "debug",
         "pathRewrite": {
-            "^/pelando-api": "/pelando-api"
+            "^/pelando-api": ""
         }
     }
 }
