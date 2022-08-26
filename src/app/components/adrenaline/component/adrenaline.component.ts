@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { AdrenalineService } from '../adrenaline.service';
-import * as converter from 'xml-js';
 
 @Component({
   selector: 'app-adrenaline',
