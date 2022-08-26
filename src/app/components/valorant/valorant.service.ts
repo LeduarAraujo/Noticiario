@@ -16,7 +16,7 @@ export class ValorantService {
   }
 
   listarNewsLetterAdrenaline() {
-    return this.service.consultar('https://adrenaline.com.br/rss').subscribe((res: Noticia) => {
+    return this.service.consultar('/adrenaline-api/rss').subscribe((res: Noticia) => {
       console.log(res);
     });
   }
