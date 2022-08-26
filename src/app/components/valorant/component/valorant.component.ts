@@ -14,7 +14,7 @@ export class ValorantComponent implements OnInit {
   }
 
   listarNoticiasValorant() {
-    console.log(this.service.listarNewsLetterValorant());
+    //console.log(this.service.listarNewsLetterValorant());
   }
 
 }
