@@ -9,6 +9,6 @@ export class AdrenalineService {
   constructor(private service: ServiceService) { }
 
   listarNewsLetterAdrenaline() {
-    return this.service.consultaServiceRest().get('/adrenaline-api/rss');
+    return this.service.consultaServiceRest().get('/api/soap-adrenaline/consulta-noticias');
   }
 }
