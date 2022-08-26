@@ -1,5 +1,5 @@
 import { Incident } from "./incident"
-import { Maintenance } from "./Maintenance"
+import { Maintenance } from "./maintenance"
 
 export interface Noticia {
     id: string
