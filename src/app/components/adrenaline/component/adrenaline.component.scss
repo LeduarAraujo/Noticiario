@@ -1,0 +1,46 @@
+.div-noticia {
+    max-width:705px;
+    max-height:150px;
+    width: auto;
+    height: auto;
+    display: inline-block;
+}
+
+.div-descricao {
+    max-width:500px;
+    max-height:150px;
+    width: auto;
+    height: auto;
+    float: left;
+    margin-left: 5px;
+    margin-top: -7px;
+}
+
+.div-img {
+    max-width:200px;
+    max-height:150px;
+    width: auto;
+    height: auto;
+    float: left;
+}
+
+.img {
+    max-width:200px;
+    max-height:150px;
+    width: auto;
+    height: auto;
+    display: inline;
+}
+
+.p-descricao {
+    margin-top: 10px;
+}
+
+.span-titulo {
+    margin-top: 0px;
+    font-weight: bold;
+}
+
+.a-link {
+    color: white;
+}

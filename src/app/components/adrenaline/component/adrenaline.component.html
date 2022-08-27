@@ -1,3 +1,14 @@
-Pagina adrenaline
+<h1>Notícias Adrenaline</h1>
 
-<button (click)="listarNoticiasAdrenaline()">Botao Listar</button>
+<div class="div-noticia" *ngFor="let noticia of noticias">
+    <div class="div-img">
+        <img src="{{noticia.enclosure[0].$.url}}" alt="noticia" class="img">
+    </div>
+    <div class="div-descricao">
+        <span class="span-titulo">{{noticia.title[0]}}</span>
+        <p class="p-descricao">
+            {{noticia.description[0]}} 
+            <a href="{{noticia.link[0]}}" class="a-link">ver mais</a>
+        </p>
+    </div>
+</div>

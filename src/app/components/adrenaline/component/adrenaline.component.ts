@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { AdrenalineService } from '../adrenaline.service';
+import { ListaAdrenalineNoticia } from '../model/listaAdrenalineNoticia';
 
 @Component({
   selector: 'app-adrenaline',
@@ -8,13 +9,11 @@ import { AdrenalineService } from '../adrenaline.service';
 })
 export class AdrenalineComponent implements OnInit {
 
+  noticias: ListaAdrenalineNoticia[] = [];
+
   constructor(private service: AdrenalineService) { }
 
   ngOnInit(): void {
+    this.service.listarNewsLetterAdrenaline().subscribe(res => this.noticias = res.listaAdrenalineNoticia);
   }
-
-  listarNoticiasAdrenaline() {
-    this.service.listarNewsLetterAdrenaline().subscribe(res => res);
-  }
-
 }

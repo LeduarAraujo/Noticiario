@@ -10,7 +10,7 @@ router.get('/consulta-noticias', (req, res) => {
 
         axios.get(url).then((response) => {
                 parseString(response.data, (err, jsonBody) => {
-                        res.status(200).json(jsonBody);
+                        res.status(200).json({"listaAdrenalineNoticia": jsonBody.rss.channel[0].item});
                 });
         }).catch( err => res.status(500).json(err));
 });

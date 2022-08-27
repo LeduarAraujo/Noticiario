@@ -8,6 +8,8 @@ import { HttpClientModule } from '@angular/common/http';
 
 // Models
 import { ValorantModule } from "./components/valorant/valorant.module";
+import { AdrenalineModule } from './components/adrenaline/adrenaline.module';
+
 
 @NgModule({
   declarations: [
@@ -19,7 +21,8 @@ import { ValorantModule } from "./components/valorant/valorant.module";
     HttpClientModule,
     
     // Models
-    ValorantModule
+    ValorantModule,
+    AdrenalineModule
   ],
   providers: [],
   bootstrap: [AppComponent]

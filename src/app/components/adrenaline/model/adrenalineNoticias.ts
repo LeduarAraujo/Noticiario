@@ -1,5 +1,4 @@
-import { Rss } from "./rss";
-
+import { ListaAdrenalineNoticia } from "./listaAdrenalineNoticia";
 export interface AdrenalineNoticias {
-    rss: Rss
-  }
+  listaAdrenalineNoticia: ListaAdrenalineNoticia[];
+}
