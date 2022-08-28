@@ -1,0 +1,48 @@
+.div-noticia {
+    display: block;
+    width: 660px;
+    height: 120px;
+    margin-left: 3px;
+    margin-bottom: 3px;
+}
+
+.div-descricao {
+    width: 400px;
+    height: 120px;
+    display: inline-block;
+}
+
+.div-img {
+    width: 245px;
+    margin-right: 5px;
+    height: 100%;
+    float: left;
+}
+
+.img {
+    margin-top: 5px;
+    width: 100%;
+    align-items: center;
+    object-fit: contain;
+    grid-area: image / image / image / image;
+}
+
+.p-descricao {
+    margin-top: 5px;
+}
+
+.span-titulo {
+    margin-top: 0px;
+    font-weight: bold;
+}
+
+.a-link {
+    opacity: 1 ;
+    filter: alpha(opacity=50);
+    color: white;
+}
+
+.a-link:hover {
+    opacity: 0.5 ;
+}
+

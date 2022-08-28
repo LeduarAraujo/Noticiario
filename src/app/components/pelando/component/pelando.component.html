@@ -1,0 +1,35 @@
+<h1>Notícias Pelando</h1>
+
+<button (click)="butao()">Clique Agora</button>
+
+
+
+
+<div class="div-noticia" *ngFor="let promocao of promocoes70">
+    <a href="{{promocao.sourceUrl}}.png" class="a-link">
+        <div class="div-img">
+            <img src="{{promocao.image.original}}" alt="noticia" class="img">
+        </div>
+        <div class="div-descricao">
+            <span class="span-titulo">{{promocao.title}}</span>
+            <p class="p-descricao">
+                {{ promocao.store.name }} <br>
+                R$ {{promocao.price}}
+            </p>
+        </div>
+    </a>
+</div>
+<div class="div-noticia" *ngFor="let promocao of promocoes80">
+    <a href="{{promocao.sourceUrl}}.png" class="a-link">
+        <div class="div-img">
+            <img src="{{promocao.image.original}}&amp;t=eyJoZWlnaHQiOjEyMn0%3D" alt="noticia" class="img" aria-disabled="false">
+        </div>
+        <div class="div-descricao">
+            <span class="span-titulo">{{promocao.title}}</span>
+            <p class="p-descricao">
+                {{ promocao.store.name }} <br>
+                R$ {{promocao.price}}
+            </p>
+        </div>
+    </a>
+</div>

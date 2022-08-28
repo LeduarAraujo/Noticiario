@@ -34,5 +34,14 @@
         "pathRewrite": {
             "^/pelando-api": ""
         }
+    },
+    "/pelando-img/*": {
+        "target": " https://api.pelando.com.br",
+        "secure": true,
+        "changeOrigin": true,
+        "logLevel": "debug",
+        "pathRewrite": {
+            "^/pelando-img": ""
+        }
     }
 }
