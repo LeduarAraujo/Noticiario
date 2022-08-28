@@ -1,39 +1,32 @@
 .div-noticia {
-    max-width:705px;
-    max-height:150px;
-    width: auto;
-    height: auto;
-    display: inline-block;
+    display: block;
+    width: 660px;
+    height: 120px;
+    margin-left: 3px;
+    margin-bottom: 3px;
 }
 
 .div-descricao {
-    max-width:500px;
-    max-height:150px;
-    width: auto;
-    height: auto;
-    float: left;
-    margin-left: 5px;
-    margin-top: -7px;
+    width: 400px;
+    height: 120px;
+    display: inline-block;
 }
 
 .div-img {
-    max-width:200px;
-    max-height:150px;
-    width: auto;
-    height: auto;
+    width: 245px;
+    margin-right: 5px;
+    height: 100%;
     float: left;
 }
 
 .img {
-    max-width:200px;
-    max-height:150px;
-    width: auto;
-    height: auto;
-    display: inline;
+    margin-top: 5px;
+    width: 100%;
+    align-items: center;
 }
 
 .p-descricao {
-    margin-top: 10px;
+    margin-top: 5px;
 }
 
 .span-titulo {
@@ -42,5 +35,11 @@
 }
 
 .a-link {
+    opacity: 0.5 ;
+    filter: alpha(opacity=50);
     color: white;
+}
+
+.a-link:hover {
+    opacity: 1 ;
 }
