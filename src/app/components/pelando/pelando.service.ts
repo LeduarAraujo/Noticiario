@@ -1,8 +1,6 @@
 import { HttpParams } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { firstValueFrom } from 'rxjs';
 import { ServiceService } from 'src/app/core/services/service.service';
-import { Edge } from './model/edge';
 import { PelandoResponse } from './model/pelandoResponse';
 
 @Injectable({

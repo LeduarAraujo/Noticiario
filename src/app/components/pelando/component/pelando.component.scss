@@ -13,7 +13,6 @@
 }
 
 .div-img {
-    width: 245px;
     margin-right: 5px;
     height: 100%;
     float: left;
@@ -21,10 +20,8 @@
 
 .img {
     margin-top: 5px;
-    width: 100%;
+    height: 100%;
     align-items: center;
-    object-fit: contain;
-    grid-area: image / image / image / image;
 }
 
 .p-descricao {
@@ -45,4 +42,3 @@
 .a-link:hover {
     opacity: 0.5 ;
 }
-

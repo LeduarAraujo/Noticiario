@@ -19,11 +19,24 @@ export class PelandoComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  butao() {
-    this.service.realizarBusca('Placa de Vídeo RTX 3070')
-      .subscribe(res => this.promocoes70 = res.data.public.searchOffers.edges.filter(off => off.status == "ACTIVE"));
-    this.service.realizarBusca('Placa de Vídeo RTX 3080')
-    .subscribe(res => this.promocoes80 = res.data.public.searchOffers.edges.filter(off => off.status == "ACTIVE"));
+  botao() {
+    this.service.realizarBusca('Placa de Vídeo RTX 3070').subscribe(res => {
+        this.promocoes70 = res.data.public.searchOffers
+          .edges.filter(off => off.status == "ACTIVE").slice(0, 2);
+    });
+
+    this.service.realizarBusca('Placa de Vídeo RTX 3080').subscribe(res => {
+        this.promocoes80 = res.data.public.searchOffers
+          .edges.filter(off => off.status == "ACTIVE").slice(0, 2);
+    });
+  }
+
+  montarImg(apiString: string) {
+    return "/pelando-img/" + apiString.substring(27);
+  }
+
+  concatenarLista() {
+    return this.promocoes70.concat(this.promocoes80);
   }
 
 }
